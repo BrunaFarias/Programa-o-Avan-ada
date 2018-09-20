@@ -1,0 +1,24 @@
+/*
+A classe Poupanca deve possuir um atributo relacionado à variação (rendimento), com métodos getter, 
+setter e construtor. Crie também um método CalculaRendimento(), que informa o valor do saldo multiplicado 
+pela taxa de rendimento.
+ */
+public class Poupanca extends Conta{
+    private double rendimento;
+    
+    public Poupanca(double s){
+        super (s);
+    }
+    
+    public double getRendimento() {
+        return rendimento;
+    }
+
+    public void setRendimento(double rendimento) {
+        this.rendimento = rendimento;
+    }
+    
+    public void CalculaRendimento(){
+        System.out.println("O rendimento eh: " +super.getSaldo()*rendimento);
+    }
+}
