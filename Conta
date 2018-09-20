@@ -1,0 +1,54 @@
+/*A classe Conta deve possuir um atributo que represente o saldo da conta. 
+Este atributo deve ser inicializado 
+através de um construtor parametrizado que valide o valor enviado como parâmetro. 
+Devem ser criados métodos para mostrar o saldo, para crédito e para débito na conta. 
+Crie um getter e um setter para o atributo.*/
+
+public class Conta {
+  private int numero;
+   private String nome;
+   private double saldo;
+ 
+   public Conta(double s) {
+        saldo = s;
+    }
+   
+     public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+   
+   public void deposita(double valor){
+       saldo += valor;
+   }
+    
+   public void saque(double valor){
+       saldo -=valor;
+   }
+ 
+   public void imprimir(double Saldo){
+       System.out.println("O seu saldo atual eh:" +saldo);
+   }
+
+   
+   
+}
