@@ -1,0 +1,39 @@
+public class TestaContas extends Conta {
+    
+    public TestaContas(double s){
+        super (s);
+    }
+
+    
+    public static void main(String[] args){
+        
+        Conta c = new Conta();
+        c.setNome("Teste");
+        c.setNumero(123);
+        c.setSaldo(5000.0);
+        c.deposita(0.0);
+        c.saque(50);
+        
+     
+        
+        Poupanca cp = new Poupanca();
+        cp.setRendimento(0.5);
+ 
+        
+        
+        Corrente cc = new Corrente();
+        
+        cc.setTaxa(0.10);
+        
+       
+
+        System.out.println("Nome do Cliente: "+c.getNome());
+        System.out.println("Numero da conta: "+c.getNumero());
+        System.out.println("Seu saldo é: " +c.getSaldo());
+        System.out.println();
+
+        
+        
+       
+    }
+    
